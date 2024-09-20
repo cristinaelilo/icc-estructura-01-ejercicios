@@ -15,7 +15,7 @@
  * estarán mejor equipados para comprender cómo operan internamente las
  * estructuras de datos y cómo pueden manipularlas eficientemente.
  */
-public class DataStructuresPrep {
+public class  DataStructuresPrep {
 
     /**
      * Resta dos números sin utilizar el operador de resta.
@@ -26,7 +26,11 @@ public class DataStructuresPrep {
      *         Ejemplo: subtractAlgorithm(5, 3) retorna 2.
      */
     public int subtractAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int count = 0;
+        while (a>(b+count)) {
+            count=count+1;
+        }
+        return count;
     }
 
     /**
@@ -38,8 +42,12 @@ public class DataStructuresPrep {
      *         Ejemplo: multiplyAlgorithm(5, 3) retorna 15.
      */
     public int multiplyAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
-
+        int result = 0;
+        // Multiplicar sumando 'a', 'b' veces.
+        for (int i = 0; i < b; i++) {
+            result += a;
+        }
+        return result;
     }
 
     /**
@@ -51,9 +59,16 @@ public class DataStructuresPrep {
      *         Ejemplo: divideWAlgorithm(10, 2) retorna 5.
      */
     public int divideWAlgorithm(int dividend, int divisor) {
-        throw new UnsupportedOperationException("Not yet implemented");
-
-    }
+        int count = 0;
+        int residuo = dividend;
+        while (residuo>=divisor)
+        {
+            residuo -= divisor;
+            count++;
+        }
+        return count;
+        }
+        
 
     /**
      * Verifica si un número es perfecto. Un número es perfecto si es igual a la
