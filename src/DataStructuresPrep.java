@@ -79,7 +79,13 @@ public class  DataStructuresPrep {
      *         Ejemplo: isPerfectNumber(28) retorna true.
      */
     public boolean isPerfectNumber(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int sum =0;
+    for (int i = 1; i < number; i++){
+        if(number % i== 0){
+            sum = sum + i;
+        }
+    }
+    return sum == number;
     }
 
     /**
@@ -90,7 +96,11 @@ public class  DataStructuresPrep {
      *         Ejemplo: getFactorial(5) retorna 120.
      */
     public int getFactorial(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int fact = 1;
+        for (int i = 2; i <= number; i++) {
+            fact *= i;
+        }
+        return fact;
     }
 
     /**
@@ -101,9 +111,14 @@ public class  DataStructuresPrep {
      *         Ejemplo: findMaximum(new int[]{1, 5, 3, 6, 8, 2}) retorna 8.
      */
     public int findMaximum(int[] numbers) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int max = numbers[0]; 
+    for (int i = 1; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i]; 
+        }
     }
-
+    return max; 
+}
     /**
      * Calcula la potencia de un número sin utilizar Math.pow.
      * 
@@ -113,7 +128,11 @@ public class  DataStructuresPrep {
      *         Ejemplo: powerAlgorithm(2, 3) retorna 8.
      */
     public int powerAlgorithm(int base, int exponent) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int result = 1;
+    for (int i = 0; i < exponent; i++) {
+        result *= base; 
+    }
+    return result; 
     }
 
     /**

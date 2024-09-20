@@ -30,7 +30,10 @@ public class App {
         int resultado = dataStructuresPrep.subtractAlgorithm(15, 5);
         int multiplicación = dataStructuresPrep.multiplyAlgorithm(5, 3);
         int division = dataStructuresPrep.divideWAlgorithm(10, 2);
-
+        boolean number = dataStructuresPrep.isPerfectNumber(28);
+        int factorial = dataStructuresPrep.getFactorial(5);
+        int nummayor = dataStructuresPrep.findMaximum(new int[]{1, 5, 3, 6, 8, 2});
+        int potencia = dataStructuresPrep.powerAlgorithm(2, 3);
         /*
          * Imprimir el resultado de la operación.
          * 
@@ -48,6 +51,10 @@ public class App {
         System.out.println("El resultado de subtractAlgorithm  es: " + resultado);
         System.out.println("El resultado de la multiplicación  es: " + multiplicación);
         System.out.println("El resultado de la división  es: " + division);
+        System.out.println("El resultado del número perfecto  es: " + number);
+        System.out.println("El resultado del factorial de un número  es: " + factorial);
+        System.out.println("El resultado del número mayor en un arreglo de enteros es: " + nummayor);
+        System.out.println("El resultado de la potencia de un número es: " + potencia);
 
     }
 }
